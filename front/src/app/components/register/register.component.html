@@ -1,0 +1,57 @@
+<!-- Default form register -->
+<section>
+<form [formGroup]="signupform" class="text-center border border-light p-5" style="background-color:rgb(243, 246, 255);">
+  <p class="h4 mb-4" style="color: #858DF3;">Sign up</p>
+  <div class="form-row mb-4" >
+    <div class="col">
+      <!-- First name -->
+      <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" formControlName="FirstName"  ><br>
+    </div>
+    <div class="col">
+      <!-- Last name -->
+      <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name" formControlName="LastName"  >
+    </div>
+  </div>
+  <!-- E-mail -->
+  <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" formControlName="mail"  >
+  <!-- Password -->
+  <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" formControlName="password"  
+    aria-describedby="defaultRegisterFormPasswordHelpBlock">
+  <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+    At least 8 characters and 1 digit
+  </small>
+  <!-- Phone number -->
+  <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" formControlName="Phone"
+    aria-describedby="defaultRegisterFormPhoneHelpBlock">
+  <div>
+    <p>
+
+    </p>
+
+</div>
+  <!-- Sign up button -->
+  <button  class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal"  (click)="onSignup()">
+    Sign up
+  </button>  
+  <div>
+    <p>
+
+    </p>
+    <p>
+        
+    </p>
+    <p>
+        
+    </p>
+</div> <!-- Social register -->
+  <p>You have an account ? <a href="http://localhost:4200/login">Log in</a></p>
+
+  <hr>
+  <!-- Terms of service -->
+  <p>By clicking
+    <em>Sign up</em> you agree to our
+    <a href="" target="_blank">terms of service</a>
+  </p>
+</form>
+<!-- Default form register -->
+</section>

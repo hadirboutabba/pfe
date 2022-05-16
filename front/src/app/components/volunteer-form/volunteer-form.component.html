@@ -1,0 +1,32 @@
+<section>
+    <form [formGroup]="volunteerform" class="text-center border border-light p-5" style="background-color:rgb(243, 246, 255);">
+      <p class="h4 mb-4" style="color: #858DF3;">New volunteer opportunity</p>
+      <div class="form-row mb-4" >
+        <div class="col">
+          <!-- Title -->
+          <input type="text" id="defaultTitle" class="form-control" placeholder="Title" formControlName="Title"  ><br>
+        </div>
+        <div class="col">
+          <!-- Company's Name -->
+          <input type="text" id="defaultCompanyName" class="form-control" placeholder="Company's Name" formControlName="CompanyName"  >
+        </div>
+      </div>
+      <!-- Description -->
+      <input type="email" id="defaultDescription" class="form-control mb-4" placeholder="Description" formControlName="Description"  >
+      <!-- URL -->
+      <input type="url" id="defaulURL" class="form-control" placeholder="URL" formControlName="URL"  >
+
+      <div>
+        <p>
+    
+        </p>
+    
+    </div>
+      
+      <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal"  (click)="onAdd()">
+        Add
+      </button>  
+
+      <p><a href="http://localhost:4200/volunteerAdmin">Cancel</a></p>
+  </form>
+</section>
